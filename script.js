@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", () => {
         try {
             //loading
             movieResults.innerHTML = '<div class="loading">Searching movies...</div>';
-            const response = await fetch(`http://www.omdbapi.com/?apikey=eeb0f580&s=${movieName}`);
+            const response = await fetch(`https://www.omdbapi.com/?apikey=eeb0f580&s=${movieName}`);
             const data = await response.json(); // json parsing
             
             if (data.Response === "False") { //response check
